@@ -1,0 +1,24 @@
+LOAD junctions.txt: 1 accepted, 0 rejected
+LOAD incidents.txt: 0 accepted, 0 rejected
+> INC_LIST
+INCIDENTS 0
+> INC_REPORT 1 7 CRIME 2 10
+INCIDENT REPORTED 1
+> INC_REPORT 2 7 CRIME 2 10
+INCIDENT REPORTED 2
+> INC_REPORT 3 7 MEDICAL 4 0
+INCIDENT REPORTED 3
+> INC_REPORT 4 7 FIRE 5 999999999
+INCIDENT REPORTED 4
+> INC_PREORDER
+INCIDENT PREORDER 1 2 3 4
+> INC_REPORT 3 7 FIRE 1 1
+ERROR line 7: duplicate incident ID
+> INC_REPORT 9 8 FIRE 1 1
+ERROR line 8: junction 8 not found
+> INC_LIST
+INCIDENTS 4
+INCIDENT 1 junction=7 category=CRIME severity=2 time=10 status=REPORTED
+INCIDENT 2 junction=7 category=CRIME severity=2 time=10 status=REPORTED
+INCIDENT 3 junction=7 category=MEDICAL severity=4 time=0 status=REPORTED
+INCIDENT 4 junction=7 category=FIRE severity=5 time=999999999 status=REPORTED

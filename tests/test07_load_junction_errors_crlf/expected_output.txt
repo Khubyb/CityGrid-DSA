@@ -1,0 +1,21 @@
+ERROR junctions.txt:5: invalid junction ID
+ERROR junctions.txt:6: invalid junction ID
+ERROR junctions.txt:7: invalid junction ID
+ERROR junctions.txt:8: invalid junction ID
+ERROR junctions.txt:9: invalid junction ID
+ERROR junctions.txt:10: empty name
+ERROR junctions.txt:11: invalid type
+ERROR junctions.txt:12: invalid type
+ERROR junctions.txt:13: wrong field count
+ERROR junctions.txt:14: wrong field count
+ERROR junctions.txt:15: duplicate junction ID
+ERROR junctions.txt:17: invalid junction ID
+LOAD junctions.txt: 3 accepted, 12 rejected
+LOAD incidents.txt: 0 accepted, 0 rejected
+> CITY_LIST
+JUNCTIONS 3
+JUNCTION 1 One PLAIN
+JUNCTION 2 Two Hospital HOSPITAL
+JUNCTION 7 Seven DEPOT
+> CITY_FIND 7
+JUNCTION 7 Seven DEPOT

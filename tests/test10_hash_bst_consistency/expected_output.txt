@@ -1,0 +1,40 @@
+LOAD junctions.txt: 1 accepted, 0 rejected
+LOAD incidents.txt: 3 accepted, 0 rejected
+> REQUEST 15
+INCIDENT PENDING 15
+> PRIORITY_SERVE
+INCIDENT SERVED 15
+> INC_FIND 15
+ERROR line 3: incident 15 not found
+> INC_LIST
+INCIDENTS 2
+INCIDENT 5 junction=1 category=FIRE severity=3 time=10 status=REPORTED
+INCIDENT 25 junction=1 category=FIRE severity=2 time=10 status=REPORTED
+> INC_PREORDER
+INCIDENT PREORDER 5 25
+> HASH_STATS
+HASH capacity=11 size=2
+> INC_REPORT 15 1 CRIME 1 1
+INCIDENT REPORTED 15
+> INC_FIND 15
+INCIDENT 15 junction=1 category=CRIME severity=1 time=1 status=REPORTED
+> INC_CLOSE 5
+INCIDENT CLOSED 5
+> INC_CLOSE 5
+ERROR line 10: incident 5 not found
+> REQUEST 5
+ERROR line 11: incident 5 not found
+> INC_LIST
+INCIDENTS 2
+INCIDENT 15 junction=1 category=CRIME severity=1 time=1 status=REPORTED
+INCIDENT 25 junction=1 category=FIRE severity=2 time=10 status=REPORTED
+> HASH_STATS
+HASH capacity=11 size=2
+> INC_CLOSE 15
+INCIDENT CLOSED 15
+> INC_CLOSE 25
+INCIDENT CLOSED 25
+> INC_LIST
+INCIDENTS 0
+> HASH_STATS
+HASH capacity=11 size=0

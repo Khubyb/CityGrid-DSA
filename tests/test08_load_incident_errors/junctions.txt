@@ -1,0 +1,2 @@
+1|Hub|PLAIN
+2|Clinic|HOSPITAL

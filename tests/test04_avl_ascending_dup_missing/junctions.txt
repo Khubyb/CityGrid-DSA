@@ -1,0 +1,2 @@
+1|Alpha|PLAIN
+2|Beta Station|FIRE

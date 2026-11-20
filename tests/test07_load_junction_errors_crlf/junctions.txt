@@ -1,0 +1,17 @@
+1|One|PLAIN
+
+   	 
+2 | Two Hospital |  HOSPITAL 
+abc|X|PLAIN
+0|X|PLAIN
+1000000000|X|PLAIN
++5|X|PLAIN
+5.5|X|PLAIN
+3|   |PLAIN
+4|Four|hospital
+4|Four|SCHOOL
+5|Five
+6|Six|PLAIN|extra
+2|Dup|FIRE
+007|Seven|DEPOT
+12 3|Sp|PLAIN

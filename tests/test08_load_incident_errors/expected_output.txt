@@ -1,0 +1,24 @@
+LOAD junctions.txt: 2 accepted, 0 rejected
+ERROR incidents.txt:4: invalid incident ID
+ERROR incidents.txt:5: invalid incident ID
+ERROR incidents.txt:6: invalid junction ID
+ERROR incidents.txt:7: invalid junction ID
+ERROR incidents.txt:8: invalid category
+ERROR incidents.txt:9: invalid category
+ERROR incidents.txt:10: invalid severity
+ERROR incidents.txt:11: invalid severity
+ERROR incidents.txt:12: invalid severity
+ERROR incidents.txt:13: invalid timestamp
+ERROR incidents.txt:14: invalid timestamp
+ERROR incidents.txt:15: wrong field count
+ERROR incidents.txt:16: wrong field count
+ERROR incidents.txt:17: duplicate incident ID
+ERROR incidents.txt:18: junction 55 not found
+LOAD incidents.txt: 3 accepted, 15 rejected
+> INC_LIST
+INCIDENTS 3
+INCIDENT 10 junction=1 category=MEDICAL severity=3 time=100 status=REPORTED
+INCIDENT 18 junction=2 category=CRIME severity=5 time=0 status=REPORTED
+INCIDENT 19 junction=1 category=CRIME severity=5 time=0 status=REPORTED
+> INC_FIND 18
+INCIDENT 18 junction=2 category=CRIME severity=5 time=0 status=REPORTED
